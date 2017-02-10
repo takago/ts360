@@ -1,0 +1,13 @@
+fish_translate.o: fish_translate.c ts360.h fish_translate.h glcore.h
+glcore.o: glcore.c ts360.h glcore.h panorama.h fish_translate.h
+init.o: init.c ts360.h glcore.h
+panorama.o: panorama.c ts360.h panorama.h fish_translate.h
+translate_movie.o: translate_movie.c ts360.h glcore.h translate_movie.h \
+ fish_translate.h panorama.h
+ts360.o: ts360.c ts360.h glcore.h translate_movie.h init.h
+fish_translate.o: fish_translate.h
+glcore.o: glcore.h
+init.o: init.h
+panorama.o: panorama.h
+translate_movie.o: translate_movie.h
+ts360.o: ts360.h
